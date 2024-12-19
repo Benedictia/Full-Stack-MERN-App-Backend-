@@ -2,8 +2,8 @@ const express = require('express');
 const axios = require('axios');
 const Article = require('../models/Article');
 const router = express.Router();
-
-const NEWS_API_URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${"dbb79ef7e45a4424a7151c6154e93961"}`;
+const articleRoutes = require('../routes/articleRoutes');
+const NEWS_API_URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${"NEWS_API_KEY"}`;
 
 router.get('/fetch-news', async (req, res) => {
   try {
@@ -57,6 +57,7 @@ router.get('/articles', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch articles' });
   }
 });
+
 
 // Get article by ID 
 router.get('/articles/:id', async (req, res) => {
