@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 The is is a Trending news application that fetches latest news from the news API using Express.js and MongoDB. It implements CRUD funtionality The database is connected using Mongoose
 
 Here is the link to the backend : https://full-stack-mern-app-backend-2.onrender.com/api/articles Node.js, Express.js Database: MongoDB (for CRUD functionality) News API: Fetches trending news articles To get trending news: GET /api/news
